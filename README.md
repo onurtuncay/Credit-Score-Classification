@@ -39,8 +39,7 @@ Ensure you have all dependencies installed:
 
 ```bash
 pip install numpy pandas matplotlib seaborn plotly cufflinks optuna scikit-learn catboost lightgbm scipy termcolor
-
-
+```
 ------------------------------------------------------------------------------------------------------------------------
 📊 Usage Instructions
 
