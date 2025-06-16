@@ -17,6 +17,37 @@ This project involves:
 - **Description:** Contains demographic and financial data such as annual income, customer age, and payment history.
 - **Format:** CSV file
 
+## 📐 Methodology
+
+The project follows a structured machine learning pipeline:
+
+1. **Data Cleaning:** Removal of duplicates, non-numeric values, and formatting inconsistencies.
+2. **Missing Value Imputation:** Custom techniques (e.g., domain-based replacement, KNN, mean-group filling) were applied based on column context.
+3. **Feature Engineering:** Extraction of binary features (e.g., loan types), credit history normalization, and handling categorical variables.
+4. **Encoding:** Combination of One-Hot and Ordinal Encoding using `ColumnTransformer` from scikit-learn.
+5. **Model Training:** Gradient boosting models (CatBoost, LightGBM, XGBoost) and Random Forest were trained and evaluated.
+6. **Hyperparameter Optimization:** Optuna was used to fine-tune model parameters for optimal performance.
+7. **Visualization & Interpretation:** SHAP plots, correlation heatmaps, and bar charts for feature importance and model behavior insights.
+
+## 📊 Evaluation Metrics
+
+To ensure reliable performance assessment, the following metrics were used:
+
+- **F1-Score:** Main metric due to class imbalance. It balances Precision and Recall effectively.
+- **Accuracy:** Measures overall correct predictions but may be misleading in imbalanced datasets.
+- **Precision & Recall:** Precision measures how many selected items are relevant, Recall how many relevant items are selected.
+- **Confusion Matrix:** Visual representation of model performance across classes.
+
+> 📌 Note: F1-Score is especially emphasized because it provides a better reflection of real-world performance in credit risk modeling, where false positives and negatives have different costs.
+
+
+## 📄 Report Access
+
+You can view the full version of the report including visualizations, methodology, and outputs as a PDF:
+
+👉 [View Full PDF Report](./Credit_Score_Classification_Pdf_File.pdf)
+
+
 ## 🛠️ Dependencies
 The following Python libraries are required:
 
