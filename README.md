@@ -34,12 +34,24 @@ The following Python libraries are required:
 | SciPy | Statistical analysis (e.g., chi-square tests). |
 | Termcolor | Color-coded console outputs for readability. |
 
-## ⚡ Installation
-Ensure you have all dependencies installed:
+## ⚙️ Installation
+
+Install required dependencies:
 
 ```bash
-pip install numpy pandas matplotlib seaborn plotly cufflinks optuna scikit-learn catboost lightgbm scipy termcolor
+pip install -r requirements.txt
 ```
+
+## 🧪 Experimental Setup
+
+All experiments were conducted on a local machine with the following hardware and software specifications:
+
+- **Device:** Acer Aspire A315-44P Laptop  
+- **Processor:** AMD Ryzen 5 5500U (12 threads, ~2.1GHz)  
+- **RAM:** 16 GB  
+- **Operating System:** Windows 11 Pro (64-bit)  
+- **Graphics:** DirectX 12 support  
+- **Memory Management:** 38 GB page file  
 ------------------------------------------------------------------------------------------------------------------------
 📊 Usage Instructions
 
