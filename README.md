@@ -25,9 +25,9 @@ The project follows a structured machine learning pipeline:
 2. **Missing Value Imputation:** Custom techniques (e.g., domain-based replacement, KNN, mean-group filling) were applied based on column context.
 3. **Feature Engineering:** Extraction of binary features (e.g., loan types), credit history normalization, and handling categorical variables.
 4. **Encoding:** Combination of One-Hot and Ordinal Encoding using `ColumnTransformer` from scikit-learn.
-5. **Model Training:** Gradient boosting models (CatBoost, LightGBM, XGBoost) and Random Forest were trained and evaluated.
+5. **Model Training:** Gradient boosting models (CatBoost, LightGBM ) and Random Forest were trained and evaluated.
 6. **Hyperparameter Optimization:** Optuna was used to fine-tune model parameters for optimal performance.
-7. **Visualization & Interpretation:** SHAP plots, correlation heatmaps, and bar charts for feature importance and model behavior insights.
+7. **Visualization & Interpretation:** Correlation heatmaps, and bar charts for feature importance and model behavior insights.
 
 ## 📊 Evaluation Metrics
 
