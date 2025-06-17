@@ -40,6 +40,28 @@ To ensure reliable performance assessment, the following metrics were used:
 
 > 📌 Note: F1-Score is especially emphasized because it provides a better reflection of real-world performance in credit risk modeling, where false positives and negatives have different costs.
 
+## 📈 Key Results
+
+This project evaluated multiple machine learning models for credit score classification, using **F1-score** as the primary metric. Below are the main findings:
+
+- **Best Performing Model:**  
+  Random Forest achieved the highest average F1-score of **0.790**, outperforming CatBoost (0.749) and LightGBM (0.731) with default parameters.
+
+- **Feature Selection Impact:**  
+  Models performed better using the full feature set compared to manually selected subsets, highlighting the value of comprehensive features in credit scoring tasks.
+
+- **Top Features (by importance):**  
+  - `Outstanding_Debt`  
+  - `Interest_Rate`  
+  - `Credit_Mix`  
+  - `Delay_from_due_date`  
+  - `Credit_History_Age`  
+
+- **Class-wise Behavior:**  
+  The model was especially strong at predicting the "Standard" class but showed some overlap between "Poor" and "Standard"/"Good" classifications.
+
+These findings demonstrate that with robust preprocessing, targeted optimization, high performance can be achieved in credit score prediction. Still the dataset was consist of large amount of problematic values so data preprocessing step took lots of time. This indicates the importance of data quality.
+
 
 ## 📄 Report Access
 
